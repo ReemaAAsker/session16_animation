@@ -1,4 +1,4 @@
 <video width="600" controls>
-  <source src="session16.webm" type="video/mp4">
+  <source src="session16.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
