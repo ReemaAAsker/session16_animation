@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Session16 | animaion</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            /* div {
+                height: 30px;
+                width: 80px;
+                background-color: blue;
+                color: white;
+            }
+
+            div:hover {
+                width: 100%;
+                transition: all 2s ease-in-out 2s;
+                /* shorthand 
+                background-color: yellow;
+                color: black;
+            } */
+
+
+            /* Animation 2 */
+            main {
+                height: 400px;
+                width: 500px;
+                border: solid 1px grey;
+            }
+
+            div {
+                position: absolute;
+                height: 100px;
+                width: 100px;
+                background-color: blue;
+                /* animation-name: box;
+                animation-duration: 3s;
+                animation-delay: 2s;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-timing-function: linear;
+                animation-fill-mode: both; */
+                animation: box 3s linear 2s 1 normal both running;
+
+
+            }
+
+            div:hover {
+                animation-play-state: paused;
+            }
+
+            /* 
+0  90  180 270 360
+*/
+            @keyframes box {
+                0% {
+                    background-color: blueviolet;
+                    box-shadow: 2px 2px 2px 2px grey;
+                    /* translate: 0px 0px; */
+                    rotate: 0deg;
+
+                }
+
+                25% {
+                    background-color: brown;
+                    box-shadow: 2px 2px 2px 2px grey;
+                    /* transform: translateY(calc(100% - 100px)) rotate(90deg); */
+                    /* translate: 0 calc(100% - 100px); */
+                    rotate: 90deg;
+
+                    top: calc(100% - 130px);
+
+
+                }
+
+                50% {
+                    background-color: aquamarine;
+                    /* translate: 400px 300px; */
+                    box-shadow: 2px 2px 2px 2px grey;
+                    rotate: 180deg;
+                    top: calc(100% - 130px);
+                    left: calc(100% - 130px);
+
+                }
+
+
+                75% {
+                    background-color: chocolate;
+                    box-shadow: 2px 2px 2px 2px grey;
+                    /* translate: 400px 0px; */
+                    rotate: 270deg;
+                    top: 0;
+                    left: calc(100% - 130px);
+                }
+
+                100% {
+                    background-color: black;
+                    box-shadow: 2px 2px 2px 2px grey;
+                    /* translate: 0px 0px; */
+                    rotate: 360deg;
+                    top: 0;
+                    left: 0;
+
+                }
+            }
+
+            /* 0% {
+                    background-color: brown;
+                    translate: 0px 0px;
+                }
+
+                50% {
+                    background-color: aquamarine;
+
+                    border-radius: 50px;
+                    box-shadow: 10px 10px 10px 10px grey;
+
+                    rotate: 90deg;
+
+                }
+
+                100% {
+                    /* width: 100px; */
+            /* translate: 700px 0px; */
+
+            /* background-color: green; */
+            /* }  */
+        </style>
+    </head>
+
+    <body>
+        <!-- <div >Iphone 12 pro Max</div> -->
+        <!-- <main> -->
+        <div></div>
+
+        <!-- </main> -->
+    </body>
+
+</html>
+
+<!-- 
+transition :  proprty  duration  timing-function delay
+
+
+
+   /* 
+                animation: name duration timing-function delay iteration-count direction fill-mode play-state
+                */
+-->
